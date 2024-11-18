@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "4+CMnJfZy9Uu7Rwk/ZAk54t8Y1fxyxZzitq21y9XJxNUyJizb0iEvgM6gnSPzdWjD3POyGuTkSVC4STMJZp3OA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\source\\repos\\CloudWatch-Logs\\CloudWatch-Logs\\CloudWatch-Logs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\aws.logger.core\\3.3.3\\aws.logger.core.3.3.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\aws.logger.nlog\\3.3.4\\aws.logger.nlog.3.3.4.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\awssdk.cloudwatchlogs\\3.7.305.15\\awssdk.cloudwatchlogs.3.7.305.15.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\awssdk.core\\3.7.303.14\\awssdk.core.3.7.303.14.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\nlog\\5.3.4\\nlog.5.3.4.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
