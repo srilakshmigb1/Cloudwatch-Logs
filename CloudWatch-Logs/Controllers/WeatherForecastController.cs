@@ -10,14 +10,15 @@ namespace CloudWatch_Logs.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
 
-        private readonly Logger logger;
+        private static readonly Random random = new Random();
+        private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController()
+        public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
-            logger = LogManager.GetCurrentClassLogger();
+            _logger = logger;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -25,19 +26,24 @@ namespace CloudWatch_Logs.Controllers
         {
             try
             {
-                logger.Info("Method started");
+                _logger.LogInformation("Method started");
+
                 return Enumerable.Range(1, 5).Select(index => new WeatherForecast
                 {
                     Date = DateTime.Now.AddDays(index),
-                    TemperatureC = Random.Shared.Next(-20, 55),
-                    Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-                })
-                .ToArray();
+                    TemperatureC = random.Next(-20, 55),
+                    Summary = Summaries[random.Next(Summaries.Length)]
+                }).ToArray();
             }
-           catch(Exception ex)
+            catch (Exception ex)
             {
-                logger.Error(ex.Message);
+                _logger.LogError(ex, "An error occurred while getting the weather forecast");
                 return Enumerable.Empty<WeatherForecast>();
+            }
+            finally
+            {
+                _logger.LogInformation($"Weather forecasts are shown.");
+                _logger.LogInformation("Weather forecast method ended");
             }
         }
     }
